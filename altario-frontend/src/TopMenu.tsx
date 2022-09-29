@@ -41,11 +41,10 @@ export default function TopMenu(props : TopMenuProps) {
         </div>
 
         <div className='clock'>
-          <div className={(props.clock)? "pointer animate": "pointer"}>
-          </div>
+          <div className={(props.clock)? "pointer animate": "pointer"}></div>
         </div>
 
-        <div style={{display:'flex'}}>
+        <div className='flex'>
           <button onClick={()=>props.startTimer()} disabled={props.gridStarted}>
               GENERATE 2D GRID
           </button>
